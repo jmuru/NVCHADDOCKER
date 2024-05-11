@@ -6,7 +6,7 @@ WORKDIR /root
 
 # Install required packages
 RUN apk update && \
-    apk add git nodejs neovim ripgrep build-base wget curl
+    apk add git nodejs neovim neovim-doc ripgrep build-base wget curl
 
 # Install Vim-Plug
 RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
